@@ -1,0 +1,297 @@
+@font-face {
+  font-family: LatoBlack;
+  src: url(../fonts/Lato-Light.ttf);
+}
+body {
+  font-family: LatoBlack;
+  background-color: #333;
+  min-width: 500px;
+}
+#loaderImg {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 150px;
+  height: 100%;
+  padding-bottom: 50px;
+}
+.loader {
+  display: none;
+}
+
+#wrapper-body {
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url(../images/sky.jpg);
+}
+#sky {
+  /* background-image: url(../images/sky.jpg); */
+  height: 150px;
+  width: 100%;
+}
+
+#conteinerForm {
+  left: calc(50% - 225px);
+  position: relative;
+}
+#conteinerForm {
+  background: #fff;
+  height: 50px;
+  width: 450px;
+  border-radius: 180px;
+  margin-top: 50px;
+  position: absolute;
+}
+#search_form {
+  padding-left: 13px;
+}
+#search_input {
+  border: none;
+  border-radius: 180px;
+  height: 30px;
+  width: 350px;
+  font-size: 30px;
+  font-family: LatoBlack;
+  padding: 10px;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+#search_input:hover {
+  border: none;
+}
+
+.weather-today-wrapper {
+  width: 100%;
+  border-radius: 35px;
+  background-color: #102136;
+  box-shadow: 0 8px 43px 0 rgba(16, 33, 54, 0.59);
+  padding: 30px 0 38px;
+  margin-bottom: 32px;
+  justify-content: space-between;
+}
+.weather-info,
+.weather-today-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.weather-info {
+  float: right;
+  width: 33%;
+  padding: 50px 120px 32px;
+  color: #fff;
+}
+.weather-button {
+  width: 126px;
+  height: 30px;
+  border-radius: 15px;
+  outline: none;
+  font-size: 14px;
+  color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.571;
+}
+.weather-button-unactive {
+  color: rgb(105, 105, 105);
+  border: none;
+}
+
+.data {
+  margin-top: 380px;
+  width: 600px;
+  height: 218px;
+  border-radius: 0;
+  border-top-right-radius: 35px;
+  background-color: rgba(16, 33, 54, 0.6);
+  box-shadow: 0 8px 43px 0 rgba(16, 33, 54, 0.6);
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  position: relative;
+  bottom: 0px;
+  left: 0;
+}
+.data__day {
+  text-align: center;
+}
+.quote {
+  padding-bottom: 25px;
+}
+
+.quote__block {
+  text-align: right;
+  width: 360px;
+  margin-left: auto;
+  margin-right: 0;
+  color: #fff;
+  background-color: rgba(16, 33, 54, 0.8);
+  border-radius: 20px;
+  padding: 10px;
+  height: 130px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADMAAAAvCAYAAABOtfLKAAACs0lEQVRoge1aXU8TURCdqVXwE4igIn49KAb+/w/xjWhsNFhNFTVVQQTaHjLrbF3W7e653Vvdhz1Jk6Y9O3PPzNy5c5uqOABsi8hNqY+hqvYYKwDM33YEn4a9TiRDjUArpqloxTQVrZimohXTVLRimopWTFPRimkqWjFNxSLETP6X1kWIwQJsMhh3M6TXIqIVD+2IyFIFZxywgEMReVHBWRWRJ4StyVSMqlaWB4BLjFGCk/pElXgAbPVMQsusS3BCMsOACWASFFoMmRXDaO5lF4MJYOIzJDNXSN5ZgM1YfoPFLJO82GIYv6cSKOYqyTsJsFkKAEqKSXzGzsxIVWM2gCXiuJB5xNwgOMcB9mL5nPqlxACwErtMUH+SzlncInmJXzYzqyTvcO5l5+CHJSPmOD3bKsUAyah1m1xDNDEeQOZs+5G+YTKzQsxjiVFVjXlg3iF5w/RNqRjPyn3S6FeSVwkAFsDrBPUsWw1VmdkQkWuE0VEsMb5XHpL0T9krx0wx3sEekEYHzNRNwoQwZW0BPMh+UCgGgM1DT8k9deIRqg0A90RknbTzIX9A/zWRArCoPAsYLPf9XlILADYD9qftk8/5Dy+IAbAmIo/Jlmg4UNXvNUXYGh6JyBr5iJXz26IAdt3gsu+PlYB1HInIuwD+BfgQue7ZYO4sKd6oauEw2wVgY8ouOdClMGO9muW1JSJ3A5/pq+pw1pcdVbVePQgwaHeHV/5cHQwCb6XWMT+WEdJuNSDvITYHvVTV05pCxKeFPkm3jLyvInXkzy8z+xXcYSwhGXzJzlYFGHs5l2YkxfQc8a5UdIpPfKP3Il+8zKd4EIv2njWYvbI9kke+i/S9o6Wt+ZsJmdU9YkBVfwGwMt90cxYwKylr+/U8ANgA8Nz/cfRPYPMYgF0AWwE/aaXr/f0C5BzWytym4sEwfQAAAABJRU5ErkJggg==);
+  background-repeat: no-repeat;
+  background-position: 95% 15%;
+  margin-top: -175px;
+  margin-right: 15%;
+}
+.quote__text {
+  font-size: 25px;
+  padding-bottom: 25px;
+  font-weight: 590;
+  margin-right: 10px;
+}
+.quote__author {
+  font-size: 25px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+.data {
+  color: #f7f7f7;
+}
+
+.data__day {
+  color: #f7f7f7;
+  font-weight: 300;
+  font-size: 45px;
+  line-height: 108px;
+  margin-top: 32px;
+  font-size: 90px;
+}
+
+.data__wrapper {
+  margin-left: 40px;
+  display: flex;
+  width: 430px;
+}
+
+.sunrise__icon,
+.twilight__icon {
+  height: 35px;
+  width: 35px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.weather-info {
+  color: #fff;
+}
+.data__sun {
+  display: flex;
+  line-height: 80px;
+  margin-left: 30px;
+  font-weight: 600;
+  font-size: 20px;
+}
+.data__day--month {
+  display: flex;
+  line-height: 80px;
+  margin-left: 20px;
+  font-weight: 600;
+  font-size: 20px;
+}
+.minimax-block {
+  width: 160px;
+  display: flex;
+  justify-content: space-between;
+}
+.minimax,
+.minimax div {
+  display: flex;
+}
+.minimax {
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+  line-height: 1;
+  flex-grow: 1;
+}
+.current-temperature {
+  font-weight: 600;
+  font-size: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 25px;
+}
+
+.AllFiveDays {
+  display: none;
+  height: auto;
+
+  padding-bottom: 150px;
+}
+.FiveDaysSmall__city-tablet {
+  margin-top: 120px;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px black, 0 0 1em black;
+}
+.FiveDaysSmallAndMoreInfo {
+  border-radius: 35px;
+  background-color: #102136;
+  opacity: 0.8;
+  box-shadow: 0 8px 43px 0 rgba(16, 33, 54, 0.59);
+  width: 60%;
+  margin: 0 auto;
+  min-height: 300px;
+}
+.FiveDaysSmall {
+  height: 100%;
+  display: block;
+  text-align: center;
+  padding: 30px 0px 30px;
+  overflow: hidden;
+  margin-right: 5px;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  margin: 50px;
+}
+.FiveDaysWeaterList {
+  display: flex;
+  justify-content: space-between;
+}
+.FiveDaysWeaterList__item {
+  display: flex;
+  flex-direction: column;
+  min-width: 40px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.FiveDaysWeaterList__item--day {
+  min-width: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  color: hsla(0, 0%, 100%, 0.54);
+}
+.FiveDaysWeaterList__item--date {
+  font-weight: 600;
+  font-size: 24px;
+  color: #fff;
+  max-width: 30px;
+  padding-left: 26%;
+}
+.FiveDaysWeaterList__item--min-max-label {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  font-weight: 600;
+  color: hsla(0, 0%, 100%, 0.3);
+}
+.FiveDaysWeaterList__item--min-max {
+  font-size: 24px;
+  font-weight: 900;
+  color: #ff6b08;
+  padding: 0px;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  min-width: 90px;
+}

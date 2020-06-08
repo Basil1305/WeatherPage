@@ -1,0 +1,175 @@
+@media screen and (max-width: 1250px) {
+  #wrapper-body {
+    display: block;
+    background-repeat: no-repeat;
+    background-size: 1300px 100%;
+    background-image: url(../images/sky.jpg);
+  }
+  .weather-today-wrapper {
+    width: 492px;
+  }
+  .weather-info {
+    float: none;
+    width: 40%;
+    padding: 30px 30% 0px;
+    color: #fff;
+  }
+  .data {
+    width: 490px;
+    height: 260px;
+    margin: 70px auto 25px;
+    border-radius: 35px;
+  }
+  .quote {
+    margin: 200px auto 0px;
+    float: none;
+    width: 380px;
+    padding-bottom: 30px;
+  }
+  .FiveDaysSmallAndMoreInfo {
+    width: 90%;
+  }
+  .FiveDaysWeaterList__item {
+    display: flex;
+    flex-direction: column;
+    min-width: 40px;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  .FiveDaysWeaterList__item--day {
+    min-width: 50px;
+    font-size: 16px;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.54);
+  }
+  .FiveDaysWeaterList__item--date {
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+  }
+  .FiveDaysWeaterList__item--min-max-label {
+    width: 60px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    font-weight: 600;
+    color: hsla(0, 0%, 100%, 0.3);
+  }
+  .FiveDaysWeaterList__item--min-max {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ff6b08;
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    width: 70px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #wrapper-body {
+    display: block;
+    background-repeat: no-repeat;
+    background-size: 1300px 100%;
+    background-image: url(../images/sky.jpg);
+    padding-top: 50px;
+  }
+  .weather-today-wrapper {
+    width: 291px;
+  }
+  .weather-info {
+    float: none;
+    width: 40%;
+    padding: 30px 30% 0px;
+    color: #fff;
+  }
+  .data {
+    width: 290px;
+    height: 230px;
+    margin: 70px auto 25px;
+    border-radius: 35px;
+  }
+  .quote {
+    margin: 200px auto 0px;
+    float: none;
+    width: 180px;
+    padding-bottom: 30px;
+  }
+  .quote__block {
+    width: 180px;
+  }
+  .quote__text {
+    font-size: 19px;
+    padding-bottom: 45px;
+    padding-top: 10px;
+    font-weight: 590;
+    margin-right: 10px;
+  }
+  .quote__author {
+    font-size: 19px;
+    font-weight: 600;
+    margin-right: 10px;
+  }
+  #search_input {
+    border: none;
+    border-radius: 180px;
+    height: 20px;
+    width: 150px;
+    font-size: 20px;
+    padding-top: 20px;
+    font-weight: 800;
+  }
+  #conteinerForm {
+    background: #fff;
+    height: 50px;
+    width: 250px;
+    border-radius: 180px;
+    margin-top: 0px;
+    position: absolute;
+  }
+  #conteinerForm {
+    left: calc(50% - 125px);
+    position: relative;
+  }
+  .weather-button {
+    width: 95px;
+    height: 30px;
+  }
+  .data__day {
+    color: #f7f7f7;
+    font-weight: 300;
+    font-size: 45px;
+    line-height: 56px;
+    margin-top: 32px;
+  }
+  .data span {
+    text-align: center;
+    color: #fff;
+    width: 84px;
+  }
+  .data__day--month {
+    width: 56px;
+    padding-left: 25%;
+  }
+  .data__sun {
+    display: flex;
+    line-height: 80px;
+    margin-left: -105px;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 60px;
+    padding-left: 0;
+  }
+  .FiveDaysSmallAndMoreInfo {
+    width: 60%;
+  }
+  .FiveDaysSmall {
+    height: 100%;
+    display: block;
+    text-align: center;
+    padding: 30px 0px 30px;
+    overflow: scroll;
+    line-height: normal;
+  }
+}
